@@ -1,0 +1,17 @@
+{
+  "name": "instarocket",
+  "version": "1.0.0",
+  "repository": "https://github.com/WilliamJesusDev/OmniStack/tree/master/InstaRocket",
+  "author": "William Jesus <williamjesusti@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install:yarn": "yarn install && yarn i:yarn",
+    "install:npm": "npm install && npm run i:npm",
+    "i:yarn": "concurrently \"cd backend && yarn install && yarn upgrade\" \"cd frontend && yarn install && yarn upgrade\" \"cd mobile && yarn install && yarn upgrade\"",
+    "i:npm": "concurrently \"cd backend && npm run install && npm run upgrade\" \"cd frontend && npm run install && npm run upgrade\" \"cd mobile && npm run install && npm run upgrade\"",
+    "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run start\""
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
