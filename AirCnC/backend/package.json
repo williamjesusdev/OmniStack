@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon src/server.js",
+    "frontend": "cd ../frontend && yarn start",
+    "mobile": "cd ../mobile && yarn start",
+<<<<<<< HEAD
+    "start": "LOCALE=HOME REACT_APP_LOCALE=HOME concurrently \"yarn server\" \"yarn frontend\" \"yarn mobile\""
+=======
+    "start": "LOCALE=HOME REACT_APP_LOCALE=HOME concurrently \"yarn server\" \"yarn frontend\" \"yarn mobile\"",
+	"start:win": "concurrently \"yarn server\" \"yarn frontend\" \"yarn mobile\""
+>>>>>>> 13e1e4629e991da96fd0475be008ce2782e6a245
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.5",
+    "multer": "^1.4.2",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^1.19.3"
+  }
+}

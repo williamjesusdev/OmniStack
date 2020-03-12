@@ -1,0 +1,48 @@
+@baseUrl = http://localhost:3333
+@email = williamjesusti@gmail.com
+@tech = SQL
+
+### BUSCANDO TODOS OS BOOKINGS EFETUADOS
+GET {{baseUrl}}/bookings HTTP/1.1
+
+### CRIANDO UMA SESSÃO DE USUÁRIO
+# @name session
+POST {{baseUrl}}/sessions HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "{{email}}"
+}
+
+### BUSCANDO TODOS OS BOOKINGS DE UM USUÁRIO
+GET {{baseUrl}}/bookings HTTP/1.1
+user_id: {{session.response.body.$._id}}
+
+
+### BUSCANDO UM SPOT POR TECNOLOGIA
+# @name spots
+GET {{baseUrl}}/spots?tech={{tech}} HTTP/1.1
+
+### USANDO A SESSÃO E O SPOT PARA EXECUTAR O BOOKING
+@spot = {{spots.response.body.*._id}}
+
+# @name bookings
+POST {{baseUrl}}/spots/{{spot}}/bookings HTTP/1.1
+user_id: {{session.response.body.$._id}}
+Content-Type: application/json
+
+{
+  "date": "06 de Outubro"
+}
+
+### USANDO A o BOOKING PARA APROVAR
+@booking = {{bookings.response.body._id}}
+
+POST {{baseUrl}}/bookings/{{booking}}/approvals HTTP/1.1
+Content-Type: application/json
+
+### USANDO A o BOOKING PARA REJEITAR
+@booking = {{bookings.response.body._id}}
+
+POST {{baseUrl}}/bookings/{{booking}}/rejections HTTP/1.1
+Content-Type: application/json
