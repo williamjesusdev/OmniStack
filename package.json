@@ -1,15 +1,16 @@
 {
-  "name": "semanas_omnistack",
+  "name": "semanasomnistack",
   "version": "1.0.0",
   "repository": "https://github.com/WilliamJesusDev/OmniStack.git",
   "author": "William Jesus <williamjesusti@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "run:yarn": "cd InstaRocket && yarn install:yarn && cd ../AirCnC && yarn install:yarn && cd ../DevRadar && yarn install:yarn && cd ../TinDev && yarn install:yarn",
-    "run:npm": "cd InstaRocket && npm run install:npm && cd ../AirCnC && npm run install:npm && cd ../DevRadar && npm run install:npm && cd ../TinDev && npm run install:npm",
+    "run:yarn": "cd BeTheHero && yarn install:yarn && cd ../InstaRocket && yarn install:yarn && cd ../AirCnC && yarn install:yarn && cd ../DevRadar && yarn install:yarn && cd ../TinDev && yarn install:yarn",
+    "run:npm": "cd BeTheHero && npm run install:npm && cd ../InstaRocket && npm run install:npm && cd ../AirCnC && npm run install:npm && cd ../DevRadar && npm run install:npm && cd ../TinDev && npm run install:npm",
     "instarocket": "cd InstaRocket && npm run start",
     "aircnc": "cd AirCnC && npm run start",
     "tindev": "cd TinDev && npm run start",
-    "devradar": "cd DevRadar && npm run start"
+    "devradar": "cd DevRadar && npm run start",
+    "bethehero": "cd BeTheHero && npm run start"
   }
 }
