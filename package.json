@@ -5,13 +5,13 @@
   "author": "William Jesus <williamjesusti@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "install:yarn": "echo tindev && yarn install && yarn i:yarn",
-    "install:npm": "echo tindev && npm install && npm run i:npm",
+    "install:yarn": "echo TinDev && yarn install && yarn i:yarn\n",
+    "install:npm": "echo TinDev && npm install && npm run i:npm\n",
     "i:yarn": "yarn backend && yarn frontend && cd ..",
     "i:npm": "npm run backend && npm run frontend && npm run mobile && cd ..",
-    "backend": "cd backend && yarn install && yarn upgrade",
-    "frontend": "cd frontend && yarn install && yarn upgrade",
-    "mobile": "cd mobile && yarn install && yarn upgrade",
+    "backend": "cd backend && yarn install && yarn upgrade\n",
+    "frontend": "cd frontend && yarn install && yarn upgrade\n",
+    "mobile": "cd mobile && yarn install && yarn upgrade\n",
     "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
   },
   "dependencies": {
