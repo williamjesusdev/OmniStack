@@ -5,10 +5,13 @@
   "author": "William Jesus <williamjesusti@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "install:yarn": "yarn install && yarn i:yarn",
-    "install:npm": "npm install && npm run i:npm",
-    "i:yarn": "concurrently \"cd backend && yarn install && yarn upgrade\" \"cd frontend && yarn install && yarn upgrade\" \"cd mobile && yarn install && yarn upgrade\"",
-    "i:npm": "concurrently \"cd backend && npm run install && npm run upgrade\" \"cd frontend && npm run install && npm run upgrade\" \"cd mobile && npm run install && npm run upgrade\"",
+    "install:yarn": "echo instarocket && yarn install && yarn i:yarn",
+    "install:npm": "echo instarocket && npm install && npm run i:npm",
+    "i:yarn": "yarn backend && yarn frontend && yarn mobile && cd ..",
+    "i:npm": "npm run backend && npm run frontend && npm run mobile && cd ..",
+    "backend": "cd backend && yarn install && yarn upgrade",
+    "frontend": "cd frontend && yarn install && yarn upgrade",
+    "mobile": "cd mobile && yarn install && yarn upgrade",
     "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run start\""
   },
   "dependencies": {
