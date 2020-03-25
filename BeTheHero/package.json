@@ -1,0 +1,20 @@
+{
+  "name": "bethehero",
+  "version": "1.0.0",
+  "repository": "https://github.com/WilliamJesusDev/OmniStack/tree/master/BeTheHero",
+  "author": "William Jesus <williamjesusti@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install:yarn": "echo bethehero && yarn install",
+    "install:npm": "echo bethehero && npm install && npm run i:npm",
+    "i:yarn": "yarn backend && yarn frontend && yarn mobile && cd ..",
+    "i:npm": "npm run backend && npm run frontend && npm run mobile && cd ..",
+    "backend": "cd backend && yarn install && yarn upgrade",
+    "frontend": "cd frontend && yarn install && yarn upgrade",
+    "mobile": "cd mobile && yarn install && yarn upgrade",
+    "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}

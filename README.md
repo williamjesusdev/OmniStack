@@ -1,21 +1,19 @@
-# Semanas OmniStack - 07 a 10
+# Semanas OmniStack - 07 a 11
 
-Prometo continuar adicionando novos projetos da Semana OmniStack assim como tambem adicionar os antigos que ainda não coloquei.
-
-## Indice
-[TOC]
+Prometo continuar adicionando os novos projetos da Semana OmniStack conforme forem lançados, assim como tambem adicionar os antigos que ainda não desenvolvi.
 
 ## Diretórios
 
-- [Semana 07](./InstaRocket)
-- [Semana 08](./TinDev)
-- [Semana 09](./AirCnC)
-- [Semana 10](./DevRadar)
+- [Semana 07 - InstaRocket](./InstaRocket)
+- [Semana 08 - TinDev](./TinDev)
+- [Semana 09 - AirCnC](./AirCnC)
+- [Semana 10 - DevRadar](./DevRadar)
+- [Semana 11 - BeTheHero](./BeTheHero)
 
 ## Dependências
 
-Iniciais: `NodeJS version: ^10.3 + NPM version: ^6.0 | Yarn version: ^1.19`
-Desenvolvimento: `ReactJS version: ^16.1 + ReactNative version: ^0.60 | Expo version: ^0.19`
+**Iniciais**: `NodeJS version: ^10.3 + NPM version: ^6.0 | Yarn version: ^1.19` <br>
+**Desenvolvimento**: `ReactJS version: ^16.1 + ReactNative version: ^0.60 | Expo version: ^0.19`
 
 ## Iniciando o Projeto
 
@@ -38,25 +36,25 @@ $ npm run:npm
 
 ### Iniciando o Servidor
 
-Ainda na raiz do projeto é possivel iniciar os projetos ***(back e web)*** 
+Ainda na raiz do projeto é possivel iniciar os projetos **_(back e web)_**
 utilizando `yarn` ou `npm`
 
 ```bash
-$ yarn instarocket || aircnc || tindev || devradar
+$ yarn instarocket || tindev || aircnc || devradar || bethehero
 
-$ npm instarocket || aircnc || tindev || devradar
+$ npm instarocket || tindev || aircnc || devradar || bethehero
 ```
 
 ## Implementações Futuras
 
-Ainda voltarei a add novas funcionalidades nesse repositório, dentre elas:
+Continuarei add novas funcionalidades nesse repositório, dentre elas:
 
-* Semanas Anteriores
-* Semana OmniStack 11.0
-* Disponibilização de cada API
-* Disponibilização de cada WEB (Deploy)
-* Disponibilização de cada MOBILE (update with EXPO)
-* Projeto unindo todas as funcionalidades
-  * Deploy desse projeto
+- [x] Semana OmniStack 11.0
+- [ ] Semanas OmniStacks Anteriores
+- [ ] Disponibilização de cada API
+- [ ] Disponibilização de cada WEB (Deploy)
+- [ ] Disponibilização de cada MOBILE (update with EXPO)
+- [ ] Projeto unindo todas as funcionalidades
+  - [ ] Deploy desse projeto
 
 ### END
