@@ -7,7 +7,7 @@
   "scripts": {
     "install:yarn": "echo BeTheHero && yarn install && yarn is:yarn\n",
     "install:npm": "echo BeTheHero && npm install && npm run i:npm\n",
-    "is:yarn": "yarn backend && cd ..",
+    "is:yarn": "yarn backend && yarn frontend && cd ..",
     "i:yarn": "yarn backend && yarn frontend && yarn mobile && cd ..",
     "i:npm": "npm run backend && npm run frontend && npm run mobile && cd ..",
     "backend": "cd backend && yarn install && yarn upgrade\n",
