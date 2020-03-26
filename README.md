@@ -1,7 +1,17 @@
-<img src="./static/omnistack.jpg" align="center"></img>
+<div align="center">
+  <img src="./frontend/src/assets/logo.svg" height="100px" alt="Be the hero"/>
+</div>
 
-<h1 align="center">Semana Omnistack 11.0</h1>
-<p align="center">Projeto desenvolvido durante a Semana Omnistack da <a href="https://rocketseat.com.br/">Rocketseat</a> de 23/03 a 28/03/2020</p>
+<h3 align="center">
+  A platform to help ONGs raise funds to solve cases
+</h3>
+
+<div align="center">
+  <img alt="Made by William Jesus" src="https://img.shields.io/badge/made%20by-William%20Jesus-%23E02041"/>
+  <img alt="Language count" src="https://img.shields.io/github/languages/count/williamjesusdev/Be-the-hero?color=%23E02041"/>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%23E02041"/>
+</div>
+<div>
 
 <p align="center">
   <a aria-label="Versão do Node" href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V12.md#12.16.1">
@@ -10,19 +20,22 @@
   <a aria-label="Versão do React" href="https://github.com/facebook/react/blob/master/CHANGELOG.md#16131-march-19-2020">
     <img src="https://img.shields.io/badge/react-16.13.1-informational?logo=react"></img>
   </a>
-  <a aria-label="Dia  de 5" href="https://rocketseat.com.br/week/aulas/11.0?aula=3">
-    <img src="https://img.shields.io/badge/Dia-3-green"></img>
+  <a aria-label="Dia 3 de 5" href="https://rocketseat.com.br/week/aulas/11.0?aula=3">
+    <img src="https://img.shields.io/badge/Dia-3-blue"></img>
   </a>
 </p>
+<br>
+
+---
 
 # BeTheHero
 
-Projeto será frequentemente atualizado com novas **features** em prol de estudo próprio, para fixação do conteúdo e upgrade das **skills**
+Esse projeto foi desenvolvido durante a Semana Omnistack 11.0 da <a href="https://rocketseat.com.br/">Rocketseat</a> que durou de 23/03 a 28/03/2020. O projeto será frequentemente atualizado com novas **features** para fixação de conteúdo e upgrade das minhas **skills**.
+<br>
 
 ## Instalação
 
-Para instalar as dependências e executar o Servidor (modo desenvolvimento), clone o projeto em seu computador e em seguida execute (à partir do _root_ do projeto):
-Após clonar o repositório efetue uma cópia do arquivo `.env.example` e renomeie como `.env` no **backend**.
+Para instalar as dependências e executar o Servidor (modo desenvolvimento), clone o projeto em seu computador efetue uma cópia do arquivo `.env.example` e renomeie como `.env` no **backend**, faça as alterações necessárias e em seguida execute (à partir do _root_ do projeto):
 
 ```bash
 cd backend
@@ -39,19 +52,26 @@ yarn dev
 ```
 
 Assim que o processo terminar, automaticamente será aberta no seu navegador a página `localhost:3000` contendo o Projeto desenvolvido até agora (Dia 3 de 5).
+<br>
 
 ## Backend
 
 Veja mais em [backend/README.md](./backend) para informações sobre o servidor e sua arquitetura.
+<br>
 
 ## Frontend
 
 Veja mais em [frontend/README.md](./frontend) para informações sobre client Web e os padrões.
+<br>
 
 ## Imnsonia
 
-Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.rest/download/) e em seguida clique na Workspace → `Import/Export` →
-`Import Data` → `From File` → e selecione o arquivo `Insomnia.json` deste repositório. Assim que terminar, o resultado ficará assim:
+Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.rest/download/) e em seguida clique na Workspace → `Import/Export` → `Import Data` → `From File` → e selecione o arquivo [`Insomnia.json`](./Insomnia.json). Assim que terminar, o resultado ficará assim:
+
+<img align="center" src="./static/insomnia.png"></img>
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Be%20The%20Hero&uri=https%3A%2F%2Fraw.githubusercontent.com%2FWilliamJesusDev%2FOmniStack%2Fmaster%2FBeTheHero%2FInsomnia.json)
+<br>
 
 ##### CRONOGRAMA
 
@@ -100,6 +120,12 @@ Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.re
 
 #### PROJETO EM ANDAMENTO | `26/03/2020`
 
-## Licença
+## Contributing
 
-[MIT](./LICENSE) &copy; [Rocketseat](https://rocketseat.com.br/)
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+Criado com :hearts: por William :wave:
