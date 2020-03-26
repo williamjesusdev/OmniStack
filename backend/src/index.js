@@ -12,6 +12,9 @@ const app = express();
 // Permite acesso externo
 app.use(cors());
 
+// Transforma o corpo da requisição em JSON
+app.use(express.json());
+
 // Desativa o X-Powered-By: Express
 app.disable("x-powered-by");
 
