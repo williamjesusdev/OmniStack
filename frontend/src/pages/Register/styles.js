@@ -15,8 +15,12 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 100%;
   padding: 96px;
-  background: #f0f0f5;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  background: ${props => props.theme.background};
+  box-shadow: 0 0 100px
+    ${props =>
+      props.theme.title === "main"
+        ? "rgba(0, 0, 0, 0.2)"
+        : "rgba(255, 255, 255, 0.2)"};
   border-radius: 8px;
 
   display: flex;
@@ -32,12 +36,13 @@ export const Section = styled.section`
 export const Image = styled.img``;
 
 export const Title = styled.h1`
+  color: ${props => props.theme.foreground};
   margin: 64px 0 32px;
   font-size: 32px;
 `;
 
 export const Paragraph = styled.p`
-  color: #737380;
+  color: ${props => props.theme.paragraph};
   font-size: 18px;
   line-height: 32px;
 `;
@@ -46,7 +51,7 @@ export const Anchor = styled(Link)`
   display: flex;
   align-items: center;
   margin-top: 40px;
-  color: #41414d;
+  color: ${props => props.theme.second};
   font-size: 18px;
   text-decoration: none;
   font-weight: 500;
@@ -80,8 +85,8 @@ export const FormGroup = styled.div`
 export const Button = styled.button`
   width: 100%;
   height: 60px;
-  background: #e02041;
-  color: #fff;
+  background: ${props => props.theme.primary};
+  color: ${props => props.theme.accent};
   border: 0;
   border-radius: 8px;
   font-weight: 700;
@@ -95,5 +100,17 @@ export const Button = styled.button`
 
   &:hover {
     filter: brightness(90%);
+  }
+`;
+
+export const Group = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > svg {
+    margin-right: 20px;
+    margin-top: 40px;
+    cursor: pointer;
   }
 `;

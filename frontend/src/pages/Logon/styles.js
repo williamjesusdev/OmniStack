@@ -23,6 +23,7 @@ export const Form = styled.form`
 `;
 
 export const Title = styled.h1`
+  color: ${props => props.theme.foreground};
   font-size: 32px;
   margin-bottom: 32px;
 `;
@@ -32,8 +33,8 @@ export const Input = styled.input``;
 export const Button = styled.button`
   width: 100%;
   height: 60px;
-  background: #e02041;
-  color: #fff;
+  background: ${props => props.theme.primary};
+  color: ${props => props.theme.accent};
   border: 0;
   border-radius: 8px;
   font-weight: 700;
@@ -51,10 +52,11 @@ export const Button = styled.button`
 `;
 
 export const Anchor = styled(Link)`
+  width: 80%;
   display: flex;
   align-items: center;
   margin-top: 40px;
-  color: #41414d;
+  color: ${props => props.theme.second};
   font-size: 18px;
   text-decoration: none;
   font-weight: 500;
@@ -65,6 +67,18 @@ export const Anchor = styled(Link)`
   }
   &:hover {
     opacity: 0.8;
+  }
+`;
+
+export const Group = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > svg {
+    margin-right: 20px;
+    margin-top: 40px;
+    cursor: pointer;
   }
 `;
 
