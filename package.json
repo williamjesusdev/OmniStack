@@ -13,7 +13,8 @@
     "backend": "cd backend && yarn install && yarn upgrade\n",
     "frontend": "cd frontend && yarn install && yarn upgrade\n",
     "mobile": "cd mobile && yarn install && yarn upgrade\n",
-    "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
+    "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "deploy": "concurrently \"cd backend && npm run deploy\" \"cd frontend && npm run deploy\""
   },
   "dependencies": {
     "concurrently": "^5.1.0"

@@ -8,7 +8,7 @@
 
 <div align="center">
   <img alt="Made by William Jesus" src="https://img.shields.io/badge/made%20by-William%20Jesus-%23E02041"/>
-  <img alt="Language count" src="https://img.shields.io/github/languages/count/williamjesusdev/Be-the-hero?color=%23E02041"/>
+  <img alt="Language count" src="https://img.shields.io/github/languages/count/williamjesusdev/BeTheHero?color=%23E02041"/>
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%23E02041"/>
 </div>
 <div>
@@ -81,7 +81,7 @@ Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.re
   <img  src="./static/insomnia.png"></img>
 </p>
 
-[![Run in Insomnia](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Be%20The%20Hero&uri=https%3A%2F%2Fraw.githubusercontent.com%2FWilliamJesusDev%2FOmniStack%2Fmaster%2FBeTheHero%2FInsomnia.json)
+[![Run in Insomnia](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Be%20The%20Hero&uri=https%3A%2F%2Fraw.githubusercontent.com%2FWilliamJesusDev%2FBeTheHero%2Fmaster%2FInsomnia.json)
 <br>
 
 ##### CRONOGRAMA
@@ -136,6 +136,10 @@ Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.re
   - adição e configuração do tema dark utilizando ThemeProvider do **styled-components** no frontend.
     <br>
 
+- `feature 04`
+
+  - disponibilização da *api*(**backend**) no [heroku](https://w-bethehero.herokuapp.com/) e do *web*(**frontend**) no [github](https://williamjesusdev.github.io/BeTheHero/).
+    <br>
 ---
 
 #### PROJETO EM ANDAMENTO | `27/03/2020`

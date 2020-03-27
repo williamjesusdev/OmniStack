@@ -65,7 +65,13 @@ export default function Logon({ toggleTheme, theme }) {
           </S.Group>
         </S.Form>
       </S.Section>
-      <S.Image src={heroesImg} alt="Heroes " />
+      <S.Image
+        src={heroesImg}
+        alt="Heroes "
+        style={{
+          filter: theme.title !== "main" && "contrast(1.2) brightness(1.2)"
+        }}
+      />
     </S.Container>
   );
 }
