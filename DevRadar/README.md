@@ -12,17 +12,18 @@
   <a aria-label="Desafios" href="DESAFIOS.md">
   	<img src="https://img.shields.io/badge/desafios-OK-blueviolet"></img>
   </a>
-  <a aria-label="Dia 5 de 5" href="https://rocketseat.com.br/week-10/aulas#4">
+  <a aria-label="Dia 5 de 5" href="https://rocketseat.com.br/week-10/aulas#5">
     <img src="https://img.shields.io/badge/Dia-5-green"></img>
   </a>
 </p>
 
 # DevRadar
-> ![](https://img.shields.io/github/stars/williamjesusti/semanaomnistack10.svg) 
-![](https://img.shields.io/github/forks/williamjesusti/semanaomnistack10.svg) 
-![](https://img.shields.io/github/tag/williamjesusti/semanaomnistack10.svg) 
-![](https://img.shields.io/github/release/williamjesusti/semanaomnistack10.svg) 
-![](https://img.shields.io/github/issues/williamjesusti/semanaomnistack10.svg) <br>
+> ![](https://img.shields.io/github/stars/williamjesusdev/devradar.svg) 
+> ![](https://img.shields.io/github/forks/williamjesusdev/devradar.svg) 
+> ![](https://img.shields.io/github/tag/williamjesusdev/devradar.svg) 
+> ![](https://img.shields.io/github/release/williamjesusdev/devradar.svg) 
+> ![](https://img.shields.io/github/issues/williamjesusdev/devradar.svg) 
+<br>
 Projeto será frequentemente atualizado com novas **features** em prol de estudo próprio, para fixação do conteúdo e upgrade das **skills**
 <br>
 

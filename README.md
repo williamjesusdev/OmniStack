@@ -4,11 +4,11 @@ Prometo continuar adicionando os novos projetos da Semana OmniStack conforme for
 
 ## Diretórios
 
-- [Semana 07 - InstaRocket](./InstaRocket)
-- [Semana 08 - TinDev](./TinDev)
-- [Semana 09 - AirCnC](./AirCnC)
-- [Semana 10 - DevRadar](./DevRadar)
-- [Semana 11 - BeTheHero](./BeTheHero)
+- [Repositório do Projeto](https://github.com/WilliamJesusDev/InstaRocket) || [Pasta Semana 07 - InstaRocket](./InstaRocket)
+- [Repositório do Projeto](https://github.com/WilliamJesusDev/TinDev) || [Pasta Semana 08 - TinDev](./TinDev)
+- [Repositório do Projeto](https://github.com/WilliamJesusDev/AirCnC) || [Pasta Semana 09 - AirCnC](./AirCnC)
+- [Repositório do Projeto](https://github.com/WilliamJesusDev/DevRadar) || [Pasta Semana 10 - DevRadar](./DevRadar)
+- [Repositório do Projeto](https://github.com/WilliamJesusDev/BeTheHero) || [Pasta Semana 11 - BeTheHero](./BeTheHero)
 
 ## Dependências
 
