@@ -7,9 +7,10 @@ import { GlobalStyle, main, dark } from "./styles/global";
 import Logon from "./pages/Logon";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
+import NewIncident from "./pages/NewIncident";
 
 export default function Routes() {
-  const [theme, setTheme] = useState(main);
+  const [theme, setTheme] = useState({});
 
   useEffect(() => {
     let localTheme = localStorage.getItem("theme");
@@ -54,6 +55,13 @@ export default function Routes() {
             path="/register"
             render={props => (
               <Register {...props} toggleTheme={toggleTheme} theme={theme} />
+            )}
+          />
+          <Route
+            exact
+            path="/incidents/new"
+            render={props => (
+              <NewIncident {...props} toggleTheme={toggleTheme} theme={theme} />
             )}
           />
         </Switch>

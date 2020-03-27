@@ -52,18 +52,17 @@ export const Button = styled.button`
 `;
 
 export const Anchor = styled(Link)`
-  width: 80%;
   display: flex;
   align-items: center;
-  margin-top: 40px;
   color: ${props => props.theme.second};
   font-size: 18px;
   text-decoration: none;
   font-weight: 500;
+  margin-left: 20px;
   transition: opacity 0.2s;
 
   & > svg {
-    margin-right: 8px;
+    margin-right: 15px;
   }
   &:hover {
     opacity: 0.8;
@@ -71,14 +70,26 @@ export const Anchor = styled(Link)`
 `;
 
 export const Group = styled.div`
+  margin-top: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   & > svg {
-    margin-right: 20px;
-    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    padding: ${props =>
+      props.theme.title === "main" ? "5px 50px 5px 0" : "5px 0 5px 50px"};
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid ${props => props.theme.second};
     cursor: pointer;
+    box-shadow: 0 0 20px
+      ${props =>
+        props.theme.title === "main"
+          ? "rgba(0, 0, 0, 0.3)"
+          : "rgba(255, 255, 255, 0.2)"};
+    transition: example 1s;
   }
 `;
 
