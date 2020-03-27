@@ -1,9 +1,9 @@
 # AirCnC - Code and Coffee
-> ![](https://img.shields.io/github/stars/williamjesusti/semanaomnistack9.svg) 
-![](https://img.shields.io/github/forks/williamjesusti/semanaomnistack9.svg) 
-![](https://img.shields.io/github/tag/williamjesusti/semanaomnistack9.svg) 
-![](https://img.shields.io/github/release/williamjesusti/semanaomnistack9.svg) 
-![](https://img.shields.io/github/issues/williamjesusti/semanaomnistack9.svg)<br>
+> ![](https://img.shields.io/github/stars/williamjesusdev/aircnc.svg) 
+![](https://img.shields.io/github/forks/williamjesusdev/aircnc.svg) 
+![](https://img.shields.io/github/tag/williamjesusdev/aircnc.svg) 
+![](https://img.shields.io/github/release/williamjesusdev/aircnc.svg) 
+![](https://img.shields.io/github/issues/williamjesusdev/aircnc.svg)<br>
 Projeto iniciado durante a **Semana OmniStack 9.0** da [Rocketseat](https://rocketseat.com.br/) `de 30/09 a 04/10/2019` e frequentemente atualizado com novas **features** através de estudo próprio para fixação de conteúdo e upgrade das minhas **skills**
 <br>
 
