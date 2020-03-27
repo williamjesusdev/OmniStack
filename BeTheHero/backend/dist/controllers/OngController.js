@@ -1,15 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-var _crypto = require("crypto");
-var _crypto2 = _interopRequireDefault(_crypto);
+"use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _crypto = require('crypto'); var _crypto2 = _interopRequireDefault(_crypto);
 
-var _connection = require("../database/connection");
-var _connection2 = _interopRequireDefault(_connection);
+var _connection = require('../database/connection'); var _connection2 = _interopRequireDefault(_connection);
 
-exports.default = {
+exports. default = {
   async index(req, res) {
     const ongs = await _connection2.default.call(void 0, "ongs").select("*");
 

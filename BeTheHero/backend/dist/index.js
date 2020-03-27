@@ -1,23 +1,16 @@
-"use strict";
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-require("dotenv/config");
-var _cors = require("cors");
-var _cors2 = _interopRequireDefault(_cors);
-var _express = require("express");
-var _express2 = _interopRequireDefault(_express);
+"use strict"; function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }require('dotenv/config');
+var _cors = require('cors'); var _cors2 = _interopRequireDefault(_cors);
+var _express = require('express'); var _express2 = _interopRequireDefault(_express);
 
-var _routes = require("./routes");
-var _routes2 = _interopRequireDefault(_routes);
+var _routes = require('./routes'); var _routes2 = _interopRequireDefault(_routes);
 
 // Importa as variaveis de ambiente .env
 const { LOCALE, HOME_URL, WORK_URL, PORT } = process.env;
 
-const app = _express2.default.call(void 0);
+const app = _express2.default.call(void 0, );
 
 // Permite acesso externo
-app.use(_cors2.default.call(void 0));
+app.use(_cors2.default.call(void 0, ));
 
 // Transforma o corpo da requisição em JSON
 app.use(_express2.default.json());

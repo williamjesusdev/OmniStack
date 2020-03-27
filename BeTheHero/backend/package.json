@@ -6,10 +6,13 @@
   "scripts": {
     "start": "node dist/index.js",
     "dev": "nodemon --exec sucrase-node src/index.js",
-    "build": "sucrase ./src -d ./dist --transforms imports"
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "predeploy": "yarn build",
+    "deploy": "git init && git reset HEAD~1 && git add . && git commit -am \"make it better\" && heroku git:remote -a w-bethehero && git push heroku master -f"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.20.13",
     "mongoose": "^5.8.7",
@@ -17,7 +20,6 @@
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
