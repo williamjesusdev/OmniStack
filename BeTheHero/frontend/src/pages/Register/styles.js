@@ -50,7 +50,6 @@ export const Paragraph = styled.p`
 export const Anchor = styled(Link)`
   display: flex;
   align-items: center;
-  margin-top: 40px;
   color: ${props => props.theme.second};
   font-size: 18px;
   text-decoration: none;
@@ -58,7 +57,7 @@ export const Anchor = styled(Link)`
   transition: opacity 0.2s;
 
   & > svg {
-    margin-right: 8px;
+    margin-right: 10px;
   }
   &:hover {
     opacity: 0.8;
@@ -103,14 +102,40 @@ export const Button = styled.button`
   }
 `;
 
+export const Toggle = styled.button`
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
+  border: 1px solid ${props => props.theme.support};
+  background: transparent;
+  margin-left: 16px;
+  transition: all 0.2s;
+
+  &:hover {
+    border-color: #999;
+  }
+`;
 export const Group = styled.div`
+  width: 95%;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   & > svg {
-    margin-right: 20px;
-    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    padding: ${props =>
+      props.theme.title === "main" ? "5px 50px 5px 0" : "5px 0 5px 50px"};
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid ${props => props.theme.second};
     cursor: pointer;
+    box-shadow: 0 0 20px
+      ${props =>
+        props.theme.title === "main"
+          ? "rgba(0, 0, 0, 0.3)"
+          : "rgba(255, 255, 255, 0.2)"};
+    transition: example 1s;
   }
 `;

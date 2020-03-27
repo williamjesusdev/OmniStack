@@ -33,6 +33,15 @@
 Esse projeto foi desenvolvido durante a Semana Omnistack 11.0 da <a href="https://rocketseat.com.br/">Rocketseat</a> que durou de 23/03 a 28/03/2020. O projeto será frequentemente atualizado com novas **features** para fixação de conteúdo e upgrade das minhas **skills**.
 <br>
 
+<div align="center">
+  <h2>Light Theme</h2>
+  <img src="./static/lightTheme.gif"></img>
+  <br>
+  <h2>Dark Theme</h2>
+  <img src="./static/darkTheme.gif"></img>
+</div>
+<br>
+
 ## Instalação
 
 Para instalar as dependências e executar o Servidor (modo desenvolvimento), clone o projeto em seu computador efetue uma cópia do arquivo `.env.example` e renomeie como `.env` no **backend**, faça as alterações necessárias e em seguida execute (à partir do _root_ do projeto):
@@ -68,9 +77,11 @@ Veja mais em [frontend/README.md](./frontend) para informações sobre client We
 
 Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.rest/download/) e em seguida clique na Workspace → `Import/Export` → `Import Data` → `From File` → e selecione o arquivo [`Insomnia.json`](./Insomnia.json). Assim que terminar, o resultado ficará assim:
 
-<img align="center" src="./static/insomnia.png"></img>
+<p align="center">
+  <img  src="./static/insomnia.png"></img>
+</p>
 
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Be%20The%20Hero&uri=https%3A%2F%2Fraw.githubusercontent.com%2FWilliamJesusDev%2FOmniStack%2Fmaster%2FBeTheHero%2FInsomnia.json)
+[![Run in Insomnia](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Be%20The%20Hero&uri=https%3A%2F%2Fraw.githubusercontent.com%2FWilliamJesusDev%2FOmniStack%2Fmaster%2FBeTheHero%2FInsomnia.json)
 <br>
 
 ##### CRONOGRAMA
@@ -104,6 +115,8 @@ Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.re
   - adição da biblioteca `axios` e configuração do `services/api.js` para requisições ao **backend**
     <br>
 
+---
+
 ##### FEATURES - EXTRAS
 
 ---
@@ -118,7 +131,14 @@ Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.re
   - adição e configuração da biblioteca **styled-components** no frontend permitindo estilização perfeita e sem quebras nos componentes.
     <br>
 
-#### PROJETO EM ANDAMENTO | `26/03/2020`
+- `feature 03`
+
+  - adição e configuração do tema dark utilizando ThemeProvider do **styled-components** no frontend.
+    <br>
+
+---
+
+#### PROJETO EM ANDAMENTO | `27/03/2020`
 
 ## Contributing
 

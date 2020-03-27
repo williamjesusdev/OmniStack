@@ -15,10 +15,11 @@ export const dark = {
   title: "dark",
   primary: "#e02041",
   second: "#f0f0f5",
-  paragraph: "#f0f0f5",
+  paragraph: "#dcdce6",
   foreground: "#f0f0f5",
   background: "#262626",
   support: "#737380",
+  card: "#41414d",
   accent: "#fff"
 };
 
@@ -33,6 +34,7 @@ export const GlobalStyle = createGlobalStyle`
 html, body, #app{
   font: 400 14px Roboto, Arial, Helvetica, sans serif;
   background: ${props => props.theme.background};
+  user-select: none;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -48,8 +50,19 @@ form input{
   width: 100%;
   height: 60px;
   color: ${props => props.theme.title !== "main" && props.theme.background};
-  border: 1px solid ${props => props.theme.support};;
+  border: 1px solid ${props => props.theme.support};
+  border-left: 6px solid ${props => props.theme.primary};
   border-radius: 8px;
   padding: 0 24px;
+}
+
+form input:hover{
+  border: 1px solid ${props => props.theme.primary};
+  border-left: 6px solid ${props => props.theme.primary};
+}
+
+form input:focus{
+  border: 1px solid ${props => props.theme.primary};
+  border-left: 6px solid ${props => props.theme.primary};
 }
 `;
