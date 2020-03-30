@@ -2,4 +2,3 @@
 /node_modules
 /backend/dist/database/migrations
 */node_modules
-*/.env

@@ -20,8 +20,8 @@
   <a aria-label="Versão do React" href="https://github.com/facebook/react/blob/master/CHANGELOG.md#16131-march-19-2020">
     <img src="https://img.shields.io/badge/react-16.13.1-informational?logo=react"></img>
   </a>
-  <a aria-label="Dia 3 de 5" href="https://rocketseat.com.br/week/aulas/11.0?aula=3">
-    <img src="https://img.shields.io/badge/Dia-3-blue"></img>
+  <a aria-label="Dia 5 de 5" href="https://rocketseat.com.br/week/aulas/11.0?aula=5">
+    <img src="https://img.shields.io/badge/Dia-5-blue"></img>
   </a>
 </p>
 <br>
@@ -31,15 +31,6 @@
 # BeTheHero
 
 Esse projeto foi desenvolvido durante a Semana Omnistack 11.0 da <a href="https://rocketseat.com.br/">Rocketseat</a> que durou de 23/03 a 28/03/2020. O projeto será frequentemente atualizado com novas **features** para fixação de conteúdo e upgrade das minhas **skills**.
-<br>
-
-<div align="center">
-  <h2>Light Theme</h2>
-  <img src="./static/lightTheme.gif"></img>
-  <br>
-  <h2>Dark Theme</h2>
-  <img src="./static/darkTheme.gif"></img>
-</div>
 <br>
 
 ## Instalação
@@ -60,7 +51,15 @@ yarn install
 yarn dev
 ```
 
-Assim que o processo terminar, automaticamente será aberta no seu navegador a página `localhost:3000` contendo o Projeto desenvolvido até agora (Dia 3 de 5).
+É possivel ainda na raiz do projeto iniciar os seguintes comandos:
+
+| Função              | Description                                     |
+| ------------------- | ----------------------------------------------- |
+| `yarn install:yarn` | Instalar as dependencias de todos os projetos.  |
+| `npm install:npm`   | Instalar as dependencias de todos os projetos.  |
+| `yarn start`        | Iniciar os projetos em modo de desenvolvimento. |
+
+Assim que o processo terminar, automaticamente será aberta no seu navegador a página `localhost:3000` contendo o Projeto desenvolvido até agora (Dia 5 de 5).
 <br>
 
 ## Backend
@@ -68,12 +67,7 @@ Assim que o processo terminar, automaticamente será aberta no seu navegador a p
 Veja mais em [backend/README.md](./backend) para informações sobre o servidor e sua arquitetura.
 <br>
 
-## Frontend
-
-Veja mais em [frontend/README.md](./frontend) para informações sobre client Web e os padrões.
-<br>
-
-## Imnsonia
+### Imnsonia
 
 Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.rest/download/) e em seguida clique na Workspace → `Import/Export` → `Import Data` → `From File` → e selecione o arquivo [`Insomnia.json`](./Insomnia.json). Assim que terminar, o resultado ficará assim:
 
@@ -82,6 +76,30 @@ Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.re
 </p>
 
 [![Run in Insomnia](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Be%20The%20Hero&uri=https%3A%2F%2Fraw.githubusercontent.com%2FWilliamJesusDev%2FBeTheHero%2Fmaster%2FInsomnia.json)
+<br>
+
+## Frontend
+
+Veja mais em [frontend/README.md](./frontend) para informações sobre client Web e os padrões.
+<br>
+
+<div align="center">
+  <h2>Light Theme</h2>
+  <img src="./static/lightTheme.gif"/>
+  <br>
+  <h2>Dark Theme</h2>
+  <img src="./static/darkTheme.gif"/>
+</div>
+<br>
+
+## Mobile
+
+Veja mais em [mobile/README.md](./mobile) para informações sobre client Mobile e os padrões.
+<br>
+
+## Snapshots
+
+Veja também os [snapshots](./static).
 <br>
 
 ##### CRONOGRAMA
@@ -106,13 +124,32 @@ Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.re
   - adição da biblioteca `cors` no **backend** possibilitando acesso via **frontend**
     <br>
 
-- `Aula 03 - 25/01`
+- `Aula 03 - 25/03`
 
   - inicio do projeto [frontend](./frontend) - `React`
   - criação do projeto com `yarn create-react-app`
   - configuração de rotas de acesso com `react-router-dom`
   - criação das pages **Logon** e **Register** `Components`
   - adição da biblioteca `axios` e configuração do `services/api.js` para requisições ao **backend**
+    <br>
+
+- `Aula 04 - 26/03`
+
+  - inicio do projeto [mobile](./mobile) - `React Native`
+  - adição global da **expo-cli** com `yarn global add expo-cli`
+  - criação do projeto com `expo init mobile`, `cd mobile` e `expo start`
+  - configuração de rotas de acesso com `react-navigation`
+  - criação das páginas **Incidents** e **Detail** `Components`
+  - criação do Scroll Infinito `Flatlist`
+  - adição da biblioteca `axios` e configuração do `services/api.js`
+    <br>
+
+- `Aula 05 - 27/03`
+  - inclusão de **Validação** `celebrate` **backend**
+  - inclusão de **Testes** `jest` e `supertest` **backend**
+  - bate-papo sobre **Deploy**, **Padrões de Código** `eslint` e `prettier`
+  - bate-papo sobre **Styled Components** e **Autenticação** `jwt`
+  - finalização do projeto e bate-papo
     <br>
 
 ---
@@ -138,11 +175,17 @@ Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.re
 
 - `feature 04`
 
-  - disponibilização da *api*(**backend**) no [heroku](https://w-bethehero.herokuapp.com/) e do *web*(**frontend**) no [github](https://williamjesusdev.github.io/BeTheHero/).
+  - disponibilização da _api_(**backend**) no [heroku](https://w-bethehero.herokuapp.com/) e do _web_(**frontend**) no [github](https://williamjesusdev.github.io/BeTheHero/).
     <br>
+
+- `feature 05`
+
+  - Dark Theme no mobile com auteração automatica definida pela configuração do dispositivo.
+    <br>
+
 ---
 
-#### PROJETO EM ANDAMENTO | `27/03/2020`
+#### PROJETO FINALIZADO | `29/03/2020`
 
 ## Contributing
 
