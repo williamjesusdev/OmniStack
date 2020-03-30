@@ -1,25 +1,31 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/index.js",
-    "dev": "nodemon --exec sucrase-node src/index.js",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec sucrase-node src/server.js",
     "build": "sucrase ./src -d ./dist --transforms imports",
     "predeploy": "yarn build",
-    "deploy": "git init && heroku git:remote -a w-bethehero && git fetch heroku && git add . && git commit -am \"make it better\"&& git push heroku master -f"
+    "deploy": "git init && heroku git:remote -a w-bethehero && git fetch heroku && git add . && git commit -am \"make it better\"&& git push heroku master -f",
+    "test": "cross-env NODE_ENV=test jest "
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.20.13",
     "mongoose": "^5.8.7",
     "socket.io": "^2.3.0",
+    "celebrate": "^12.0.1",
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
+    "jest": "^25.2.4",
+    "supertest": "^4.0.2",
+    "@sucrase/jest-plugin": "^2.0.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",

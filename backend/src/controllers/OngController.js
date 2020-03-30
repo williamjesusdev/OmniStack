@@ -1,6 +1,5 @@
-import crypto from "crypto";
-
 import connection from "../database/connection";
+import generateUniqueId from "../utils/generateUniqueId";
 
 export default {
   async index(req, res) {
@@ -11,7 +10,7 @@ export default {
   async show(req, res) {},
   async create(req, res) {
     const { name, email, whatsapp, city, uf } = req.body;
-    const id = crypto.randomBytes(4).toString("HEX").toUpperCase();
+    const id = generateUniqueId();
 
     await connection("ongs").insert({
       id,

@@ -10,5 +10,9 @@ npm-debug.*
 web-build/
 web-report/
 
-# macOS
+# misc
 .DS_Store
+.env.development.local
+.env.test.local
+.env.production
+.env.production.local

@@ -2,6 +2,11 @@
 
 var _knexfile = require('../../knexfile'); var _knexfile2 = _interopRequireDefault(_knexfile);
 
-const connection = _knex2.default.call(void 0, _knexfile2.default.development);
+const config =
+  process.env.NODE_ENV === "test"
+    ? _knexfile2.default.test
+    : _knexfile2.default.development;
+
+const connection = _knex2.default.call(void 0, config);
 
 exports. default = connection;

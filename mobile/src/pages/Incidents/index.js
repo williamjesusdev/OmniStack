@@ -62,7 +62,12 @@ export default function Incidents() {
           renderItem={({ item: incident }) => (
             <S.Incident>
               <S.Property>ONG:</S.Property>
-              <S.Value>{incident.name}</S.Value>
+              <S.Value>
+                {incident.name} de{" "}
+                <S.Bold>
+                  {incident.city}/{incident.uf}
+                </S.Bold>
+              </S.Value>
               <S.Property>CASO:</S.Property>
               <S.Value>{incident.title}</S.Value>
               <S.Property>VALOR:</S.Property>
