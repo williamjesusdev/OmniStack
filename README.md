@@ -72,7 +72,7 @@ Veja mais em [backend/README.md](./backend) para informações sobre o servidor 
 Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.rest/download/) e em seguida clique na Workspace → `Import/Export` → `Import Data` → `From File` → e selecione o arquivo [`Insomnia.json`](./Insomnia.json). Assim que terminar, o resultado ficará assim:
 
 <p align="center">
-  <img  src="./static/insomnia.png"></img>
+  <img src="./assets/insomnia.png"></img>
 </p>
 
 [![Run in Insomnia](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Be%20The%20Hero&uri=https%3A%2F%2Fraw.githubusercontent.com%2FWilliamJesusDev%2FBeTheHero%2Fmaster%2FInsomnia.json)
@@ -80,15 +80,16 @@ Para testar a API do BeTheHero, baixe e instale o [Insomnia](https://insomnia.re
 
 ## Frontend
 
-Veja mais em [frontend/README.md](./frontend) para informações sobre client Web e os padrões.
+Veja o projeto rodando em [https://williamjesusdev.github.io/BeTheHero](https://williamjesusdev.github.io/BeTheHero) ou em [frontend/README.md](./frontend) para informações sobre client Web e os padrões.
 <br>
 
 <div align="center">
   <h2>Light Theme</h2>
-  <img src="./static/lightTheme.gif"/>
+  <img src="./assets/lightTheme.gif"/>
+  <br>
   <br>
   <h2>Dark Theme</h2>
-  <img src="./static/darkTheme.gif"/>
+  <img src="./assets/darkTheme.gif"/>
 </div>
 <br>
 
@@ -97,9 +98,25 @@ Veja mais em [frontend/README.md](./frontend) para informações sobre client We
 Veja mais em [mobile/README.md](./mobile) para informações sobre client Mobile e os padrões.
 <br>
 
+<div align='center' >
+  <p align='center'>Telas<p>
+  <p align='center'>Light Theme <----------  ----------> Dark Theme<p>
+  <img width='18%' style="padding: 2%;" src="./assets/homeMobile_light.png"></img>
+  <img width='18%' style="padding: 2%;" src="./assets/detailMobile_light.png"></img>
+  <img width='18%' style="padding: 2%;" src="./mobile/assets/splash.png"></img>
+  <img width='18%' style="padding: 2%;" src="./assets/homeMobile_dark.png"></img>
+  <img width='18%' style="padding: 2%;" src="./assets/detailMobile_dark.png"></img>
+</div>
+<br>
+<div align="center" >
+  <p>Abra o projeto mobile utilizando <a href="https://expo.io/">Expo</a><p>
+  <img style="margin-top: 10px; padding: 10px; border-style: solid; border-width: 2px;" src="./assets/mobile.png"></img>
+</div>
+<br>
+
 ## Snapshots
 
-Veja também os [snapshots](./static).
+Veja também as [capturas te tela](./assets) de todos os projetos.
 <br>
 
 ##### CRONOGRAMA
@@ -183,6 +200,10 @@ Veja também os [snapshots](./static).
   - Dark Theme no mobile com auteração automatica definida pela configuração do dispositivo.
     <br>
 
+- `feature 06`
+
+  - disponibilização da _mobile_(**mobile**) no [exp.host](https://exp.host/@williamjesusdev/bethehero).
+    <br>
 ---
 
 #### PROJETO FINALIZADO | `29/03/2020`

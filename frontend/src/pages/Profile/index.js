@@ -18,6 +18,10 @@ export default function Profile({ toggleTheme, theme }) {
   const history = useHistory();
 
   useEffect(() => {
+    if (!localStorage.getItem("ongName")) {
+      return history.push("/");
+    }
+
     api
       .get("profile", {
         headers: {
@@ -27,7 +31,7 @@ export default function Profile({ toggleTheme, theme }) {
       .then(response => {
         setIncidents(response.data);
       });
-  }, [ongId]);
+  }, [ongId, history]);
 
   async function handleLogout() {
     localStorage.clear();

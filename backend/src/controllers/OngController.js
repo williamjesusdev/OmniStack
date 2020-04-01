@@ -9,8 +9,21 @@ export default {
   },
   async show(req, res) {},
   async create(req, res) {
+    let id;
     const { name, email, whatsapp, city, uf } = req.body;
-    const id = generateUniqueId();
+
+    const ong = await connection("ongs").select("*").where({ name, email });
+    console.log(ong);
+    const ongsId = await connection("ongs").select("id");
+    console.log(ongsId);
+
+    if (ong.length > 0) {
+      return res.status(400).json({ error: "ONG already exists in database!" });
+    }
+
+    do {
+      id = generateUniqueId();
+    } while (ongsId.includes(id));
 
     await connection("ongs").insert({
       id,

@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
 import { GlobalStyle, main, dark } from "./styles/global";
 
@@ -64,6 +69,7 @@ export default function Routes() {
               <NewIncident {...props} toggleTheme={toggleTheme} theme={theme} />
             )}
           />
+          <Route path="*" render={props => <Redirect to="/" {...props} />} />
         </Switch>
       </Router>
     </ThemeProvider>

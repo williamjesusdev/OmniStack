@@ -9,8 +9,21 @@ exports. default = {
   },
   async show(req, res) {},
   async create(req, res) {
+    let id;
     const { name, email, whatsapp, city, uf } = req.body;
-    const id = _generateUniqueId2.default.call(void 0, );
+
+    const ong = await _connection2.default.call(void 0, "ongs").select("*").where({ name, email });
+    console.log(ong);
+    const ongsId = await _connection2.default.call(void 0, "ongs").select("id");
+    console.log(ongsId);
+
+    if (ong.length > 0) {
+      return res.status(400).json({ error: "ONG already exists in database!" });
+    }
+
+    do {
+      id = _generateUniqueId2.default.call(void 0, );
+    } while (ongsId.includes(id));
 
     await _connection2.default.call(void 0, "ongs").insert({
       id,
