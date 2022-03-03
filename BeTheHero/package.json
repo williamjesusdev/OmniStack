@@ -5,9 +5,8 @@
   "author": "William Jesus <williamjesusti@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "install:yarn": "echo BeTheHero && yarn install && yarn is:yarn\n",
+    "install:yarn": "echo BeTheHero && yarn install && yarn i:yarn\n",
     "install:npm": "echo BeTheHero && npm install && npm run i:npm\n",
-    "is:yarn": "yarn backend && yarn frontend && cd ..",
     "i:yarn": "yarn backend && yarn frontend && yarn mobile && cd ..",
     "i:npm": "npm run backend && npm run frontend && npm run mobile && cd ..",
     "backend": "cd backend && yarn install && yarn upgrade\n",
@@ -17,6 +16,6 @@
     "deploy": "concurrently \"cd backend && npm run deploy\" \"cd frontend && npm run deploy\""
   },
   "dependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^7.0.0"
   }
 }

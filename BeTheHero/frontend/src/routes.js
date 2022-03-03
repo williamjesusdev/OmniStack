@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { GlobalStyle, main, dark } from "./styles/global";
 
@@ -34,33 +34,33 @@ export default function Routes() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Router>
+      <Router basename="/BeTheHero">
         <Switch>
           <Route
             exact
             path="/"
-            render={props => (
+            render={(props) => (
               <Logon {...props} toggleTheme={toggleTheme} theme={theme} />
             )}
           />
           <Route
             exact
             path="/profile"
-            render={props => (
+            render={(props) => (
               <Profile {...props} toggleTheme={toggleTheme} theme={theme} />
             )}
           />
           <Route
             exact
             path="/register"
-            render={props => (
+            render={(props) => (
               <Register {...props} toggleTheme={toggleTheme} theme={theme} />
             )}
           />
           <Route
             exact
             path="/incidents/new"
-            render={props => (
+            render={(props) => (
               <NewIncident {...props} toggleTheme={toggleTheme} theme={theme} />
             )}
           />
