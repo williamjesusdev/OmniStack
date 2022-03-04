@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Image, View, Text, TextInput, TouchableOpacity } from "react-native";
 import Mapview, { Marker, Callout } from "react-native-maps";
 import {
-  requestPermissionsAsync,
-  getCurrentPositionAsync
+  requestForegroundPermissionsAsync,
+  getCurrentPositionAsync,
 } from "expo-location";
 import { MaterialIcons } from "@expo/vector-icons";
 
@@ -20,17 +20,17 @@ function Main({ navigation }) {
 
   useEffect(() => {
     async function loadInitialPosition() {
-      const { granted } = await requestPermissionsAsync();
+      const { granted } = await requestForegroundPermissionsAsync();
       if (granted) {
         const { coords } = await getCurrentPositionAsync({
-          enableHighAccuracy: true
+          enableHighAccuracy: true,
         });
         const { latitude, longitude } = coords;
         const region = {
           latitude,
           longitude,
           latitudeDelta: 0.015,
-          longitudeDelta: 0.011
+          longitudeDelta: 0.011,
         };
         setCurrentRegion(region);
         setInitialRegion(region);
@@ -41,7 +41,7 @@ function Main({ navigation }) {
   }, []);
 
   useEffect(() => {
-    subscribeToNewDevs(dev => setDevs([...devs, dev]));
+    subscribeToNewDevs((dev) => setDevs([...devs, dev]));
   }, [devs]);
 
   function setupWebSocket() {
@@ -54,16 +54,20 @@ function Main({ navigation }) {
 
   async function loadDevs() {
     const { latitude, longitude } = currentRegion;
-    const response = await api.get("/search", {
-      params: {
-        latitude,
-        longitude,
-        techs
-      }
-    });
-    setDevs(response.data.devs);
-    setInitialRegion(null);
-    setupWebSocket();
+    api
+      .get("/search", {
+        params: {
+          latitude,
+          longitude,
+          techs,
+        },
+      })
+      .then((response) => {
+        setDevs(response.data.devs);
+        setInitialRegion(null);
+        setupWebSocket();
+      })
+      .catch((err) => console.error({ ...err }));
   }
 
   async function loadLocation() {
@@ -92,7 +96,7 @@ function Main({ navigation }) {
             key="initial"
             coordinate={{
               latitude: initialRegion.latitude,
-              longitude: initialRegion.longitude
+              longitude: initialRegion.longitude,
             }}
           >
             <MaterialIcons name="room" size={50} color="#8e4dff" />
@@ -108,24 +112,24 @@ function Main({ navigation }) {
             </Callout>
           </Marker>
         ) : (
-          devs.map(dev => (
+          devs.map((dev) => (
             <Marker
               key={dev._id}
               coordinate={{
                 latitude: dev.location.coordinates[1],
-                longitude: dev.location.coordinates[0]
+                longitude: dev.location.coordinates[0],
               }}
             >
               <Image
                 style={styles.avatar}
                 source={{
-                  uri: dev.avatar_url
+                  uri: dev.avatar_url,
                 }}
               />
               <Callout
                 onPress={() => {
                   navigation.navigate("Profile", {
-                    github_username: dev.github_username
+                    github_username: dev.github_username,
                   });
                 }}
               >

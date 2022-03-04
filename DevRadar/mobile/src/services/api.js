@@ -1,9 +1,9 @@
 import axios from "axios";
+import { LOCALE, WORK_API, HOME_API, PROD_API } from "react-native-dotenv";
 
-const API_URL = process.env.API_URL || "http://backend-devradar.herokuapp.com/";
+const api = axios.create();
 
-const api = axios.create({
-  baseURL: API_URL
-});
+api.defaults.baseURL =
+  LOCALE === "HOME" ? HOME_API : LOCALE === "WORK" ? WORK_API : PROD_API;
 
 export default api;
